@@ -96,7 +96,7 @@ export default {
     console.log('allBooks->', allBooks);
     return {
       book,
-      books: computed(() => allBooks),
+      books: computed(() => store.getters.getAllBooks),
       addBook,
       deleteBook,
       updateBook,
